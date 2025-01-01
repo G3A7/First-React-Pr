@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-second: #2c3e50;
+  --bg-main: #1abc9c;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* color: #fff !important; */
+  /* background-color: var(--bg-second); */
+}
+.bg-custom {
+  background-color: var(--bg-second);
+}
+.fs-custom {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-inline: 10px; 
+  text-transform: uppercase;
+  color: #fff !important;
+}
+.nav-item {
+  width: fit-content !important;
+}
+.active {
+  background-color: var(--bg-main);
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+
+  width: fit-content !important;
+}
+.bg-custom-body {
+  background-color: var(--bg-main);
+  height: calc(100vh - 106px); /* ايه المفرووض اعمله هنا عشان اخد vh  كامله ! */
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+.about {
+  background-color: var(--bg-main);
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-info {
+  width: 50%;
+  /* background-color: red; */
+}
+.txt-custom-main {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.icon-info {
+  position: relative;
+  padding-inline: 18px;
+}
+.icon-info::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 5.3125rem;
+  height: 4px;
+  background-color: #fff;
+}
+
+.icon-info::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  width: 5.3125rem;
+  height: 4px;
+  background-color: #fff;
+}
+.icon-info-port {
+  position: relative;
+  padding-inline: 18px;
+}
+
+.icon-info-port::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 5.3125rem;
+  height: 4px;
+  background-color: #222;
+}
+
+.icon-info-port::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  width: 5.3125rem;
+  height: 4px;
+  background-color: #222;
+}
+.p-custom-fs {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.footer-bg {
+  background-color: var(--bg-second);
+}
+.footer-bg h4 {
+  font-weight: 500;
+  line-height: 34px;
+  font-size: 28px;
+}
+
+.footer-bg p {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+}
+.icons-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.icons-footer i {
+  margin: 0 10px;
+  font-size: 20px;
+  border: 1px solid #fff;
+  padding: 8px;
+  border-radius: 50%;
+}
+.footer-bg-last {
+  background-color: #1a252f;
+}
+.pt-custom {
+  padding-top: 60px;
+}
+
+.two-p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 80%;
+}
+.img-port {
+  cursor: pointer;
+}
+.img-port:hover .hoverimg {
+  opacity: 1;
+}
+.hoverimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: #1cd1adce;
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #11111143;
+  align-items: center;
+  justify-content: center;
+  z-index: 666;
+}
+.div-input input {
+  box-shadow: none !important;
+  border: none;
+  border-bottom: 1px solid #11111122;
+  border-radius: 5px;
+}
+.div-input input:focus {
+  border-bottom: 1px solid #11111122 !important ;
+}
+.btn-bg,
+.btn-bg:hover,
+.btn-bg:focus {
+  background-color: #1abc9c !important;
+  color: #fff !important;
+}
+@media (min-width: 992px) {
+  .txt-custom-main {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+  .fs-custom {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #fff !important;
+    text-transform: uppercase;
+  }
+  .fs-custom-h {  
+    font-size: 40px;
+  }
+  .img-info {
+    width: 20%;
+  }
+}
