@@ -14,8 +14,8 @@ function Portfolio() {
         }}
         className={`box ${flag ? "d-none" : "d-flex"} `}
       >
-        <div className="img-big w-50">
-          <img src={img} className="img-fluid mt-5" alt="" />
+        <div className="img-big ">
+          <img src={img} className="w-100 d-block" alt="" />
         </div>
       </div>
 

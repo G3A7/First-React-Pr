@@ -26,7 +26,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  margin-inline: 10px; 
+  margin-inline: 10px;
   text-transform: uppercase;
   color: #fff !important;
 }
@@ -43,7 +43,7 @@ body {
 .bg-custom-body {
   background-color: var(--bg-main);
   height: calc(100vh - 106px); /* ايه المفرووض اعمله هنا عشان اخد vh  كامله ! */
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   /* height: 100vh; */
@@ -197,6 +197,9 @@ body {
   justify-content: center;
   z-index: 666;
 }
+.img-big {
+  width: 85%;
+}
 .div-input input {
   box-shadow: none !important;
   border: none;
@@ -225,10 +228,13 @@ body {
     color: #fff !important;
     text-transform: uppercase;
   }
-  .fs-custom-h {  
+  .fs-custom-h {
     font-size: 40px;
   }
   .img-info {
     width: 20%;
+  }
+  .img-big {
+    width: 45%;
   }
 }
